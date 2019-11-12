@@ -1,0 +1,196 @@
+{
+  "1": {
+    "name": "Northern Ireland",
+    "code": "NI",
+    "results": {
+      "2017": {
+        "seats": 18,
+        "parties": {
+          "DUP": 0.36 ,
+          "SF": 0.294,
+          "SDLP": 0.117,
+          "UUP": 0.103,
+          "ALL": 0.079
+        }
+      }
+    }
+  },
+  "2": {
+    "name": "Scotland",
+    "code": "SCOT",
+    "results": {
+      "2017": {
+        "seats": 59,
+        "parties": {
+          "CON": 0.286,
+          "LAB": 0.271,
+          "LIB": 0.068,
+          "BXP": 0.002,
+          "GRN": 0.002,
+          "SNP": 0.369
+        }
+      }
+    }
+  },
+  "3": {
+    "name": "North East",
+    "code": "NE",
+    "results": {
+      "2017": {
+        "seats": 29,
+        "parties": {
+          "CON": 0.344,
+          "LAB": 0.554,
+          "LIB": 0.046,
+          "BXP": 0.039,
+          "GRN": 0.013
+        }
+      }
+    }
+  },
+  "4": {
+    "name": "North West",
+    "code": "NW",
+    "results": {
+      "2017": {
+        "seats": 75,
+        "parties": {
+          "CON": 0.362,
+          "LAB": 0.549,
+          "LIB": 0.054,
+          "BXP": 0.019,
+          "GRN": 0.011
+        }
+      }
+    }
+  },
+  "5": {
+    "name": "Yorkshire & the Humber",
+    "code": "YH",
+    "results": {
+      "2017": {
+        "seats": 54,
+        "parties": {
+          "CON": 0.405,
+          "LAB": 0.49,
+          "LIB": 0.05,
+          "BXP": 0.026,
+          "GRN": 0.013
+        }
+      }
+    }
+  },
+  "6": {
+    "name": "Wales",
+    "code": "WAL",
+    "results": {
+      "2017": {
+        "seats": 40,
+        "parties": {
+          "CON": 0.336,
+          "LAB": 0.489,
+          "LIB": 0.045,
+          "BXP": 0.02,
+          "GRN": 0.003,
+          "PLC": 0.104
+        }
+      }
+    }
+  },
+  "7": {
+    "name": "West Midlands",
+    "code": "WM",
+    "results": {
+      "2017": {
+        "seats": 59,
+        "parties": {
+          "CON": 0.49,
+          "LAB": 0.425,
+          "LIB": 0.044,
+          "BXP": 0.018,
+          "GRN": 0.017  
+        }
+      }
+    }
+  },
+  "8": {
+    "name": "East Midlands",
+    "code": "EM",
+    "results": {
+      "2017": {
+        "seats": 46,
+        "parties": {
+          "CON": 0.507,
+          "LAB": 0.405,
+          "LIB": 0.043,
+          "BXP": 0.024,
+          "GRN": 0.015
+        }
+      }
+    }
+  },
+  "9": {
+    "name": "East of England",
+    "code": "ANG",
+    "results": {
+      "2017": {
+        "seats": 58,
+        "parties": {
+          "CON": 0.546,
+          "LAB": 0.327,
+          "LIB": 0.079,
+          "BXP": 0.025,
+          "GRN": 0.019
+        }
+      }
+    }
+  },
+  "10": {
+    "name": "South West",
+    "code": "SW",
+    "results": {
+      "2017": {
+        "seats": 55,
+        "parties": {
+          "CON": 0.514,
+          "LAB": 0.291,
+          "LIB": 0.149,
+          "BXP": 0.011,
+          "GRN": 0.023
+        }
+      }
+    }
+  },
+  "11": {
+    "name": "London",
+    "code": "LON",
+    "results": {
+      "2017": {
+        "seats": 73,
+        "parties": {
+          "CON": 0.331,
+          "LAB": 0.545,
+          "LIB": 0.088,
+          "BXP": 0.013,
+          "GRN": 0.018
+        }
+      }
+    }
+  },
+  "12": {
+    "name": "South East",
+    "code": "SE",
+    "results": {
+      "2017": {
+        "seats": 84,
+        "parties": {
+          "CON": 0.538,
+          "LAB": 0.286,
+          "LIB": 0.105,
+          "BXP": 0.023,
+          "GRN": 0.031
+        }
+      }
+    }
+  }
+}
