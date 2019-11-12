@@ -127,7 +127,8 @@ class MFactory {
           ...previous_results,
           national: undefined,
           forecast: undefined,
-          deltas: predictor.projection_multipliers
+          deltas: predictor.projection_multipliers,
+          true_deltas: predictor.true_multipliers
         }
       };
     });

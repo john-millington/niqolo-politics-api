@@ -13,12 +13,14 @@ class MConstituency {
 
   initialise() {
     this.projection_multipliers = {};
+    this.true_multipliers = {};
 
     Object.keys(this.data.constituency).forEach(party => {
       const constituency = this.data.constituency[party];
       const national = this.data.national[party];
 
       let multiplier = 0;
+      let true_multilpier = 0;
       const passes = [];
 
       Object.keys(constituency).sort().forEach(year => {
@@ -39,8 +41,10 @@ class MConstituency {
       const trend_multiplier = (1 / passes.length);
       for (let i = 0; i < passes.length; i++) {
         multiplier += (passes[i] * (trend_multiplier * (i + 1)));
+        true_multilpier += passes[i];
       }
 
+      this.true_multipliers[party] = (true_multilpier / passes.length);
       this.projection_multipliers[party] = (multiplier / passes.length);
     });
   }
