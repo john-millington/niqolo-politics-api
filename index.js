@@ -10,6 +10,20 @@ App.use(compression());
 App.use(parser.urlencoded({ extended: false }));
 App.use(parser.json());
 
+App.get('/api/elections', (request, responder) => {
+  const factory = new MFactory(config);
+
+  factory.generate().then(() => {
+    const results = factory.run();
+    
+    responder.json({
+      results
+    });
+
+    responder.status(200).end();
+  });
+});
+
 App.post('/api/elections', (request, responder) => {
   const factory = new MFactory({
     ...config,

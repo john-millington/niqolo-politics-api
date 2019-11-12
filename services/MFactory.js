@@ -66,8 +66,10 @@ class MFactory {
 
   run() {
     const results = {
+      change: {},
       constituencies: {},
       headline: {},
+      previous: {},
       regions: {}
     };
  
@@ -99,6 +101,10 @@ class MFactory {
         results.headline[winner.party] = 0;
       }
 
+      if (!results.previous[previous_winner.party]) {
+        results.previous[previous_winner.party] = 0;
+      }
+
       if (!results.regions[predictor.region]) {
         results.regions[predictor.region] = {};
       }
@@ -108,6 +114,7 @@ class MFactory {
       }
 
       results.headline[winner.party] += 1;
+      results.previous[previous_winner.party] += 1;
       results.regions[predictor.region][winner.party] += 1;
 
       results.constituencies[predictor.name] = {
@@ -115,8 +122,21 @@ class MFactory {
         region: predictor.region,
         mp: this.generated[constituency].mp,
         previous: previous_winner.party,
-        winner: winner.party
+        winner: winner.party,
+        details: {
+          ...previous_results,
+          national: undefined,
+          forecast: undefined,
+          deltas: predictor.projection_multipliers
+        }
       };
+    });
+
+    [...Object.keys(results.previous), ...Object.keys(results.headline)].forEach(party => {
+      const latest = results.headline[party] ? results.headline[party] : 0;
+      const last = results.previous[party] ? results.previous[party] : 0;
+
+      results.change[party] = latest - last;
     });
 
     return results;
