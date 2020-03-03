@@ -1,5 +1,7 @@
 const fs = require('fs');
+
 const MConstituency = require('./MConstituency');
+const V2Constituency = require('./V2Constituency');
 
 const PATH = './data/json';
 
@@ -28,9 +30,9 @@ class MFactory {
     ).map(year => new Promise((resolve) => {    
       fs.readFile(`${PATH}/${year}.json`, (err, data) => {
         JSON.parse(data.toString()).constituencies.forEach(constituency => {
-          // if (parseInt(constituency.region) === 1) {
-          //   return;
-          // }
+          if (parseInt(constituency.region) === 1) {
+            return;
+          }
 
           const name = constituency.name;
           if (!this.generated[name]) {
@@ -79,7 +81,7 @@ class MFactory {
       }
 
       const previous_results = this.generated[constituency];
-      const predictor = new MConstituency(this.generated[constituency]);
+      const predictor = new V2Constituency(this.generated[constituency]);
       const result = predictor.predict();
 
       let winner = { party: '', share: 0 };
@@ -127,8 +129,9 @@ class MFactory {
           ...previous_results,
           national: undefined,
           forecast: undefined,
+          models: predictor.swing_models,
           deltas: predictor.projection_multipliers,
-          true_deltas: predictor.true_multipliers
+          true_deltas: predictor.swing
         }
       };
     });

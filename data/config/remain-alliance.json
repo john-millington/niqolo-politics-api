@@ -1,0 +1,184 @@
+{
+  "constituencies": {
+    "Arfon": {
+      "parties": ["LIB", "GRN"]
+    },
+    "Carmarthen East and Dinefwr": {
+      "parties": ["LIB", "GRN"]
+    },
+    "Dwyfor Meirionnydd": {
+      "parties": ["LIB", "GRN"]
+    },
+    "Caerphilly": {
+      "parties": ["LIB", "GRN"]
+    },
+    "Llanelli": {
+      "parties": ["LIB", "GRN"]
+    },
+    "Pontypridd": {
+      "parties": ["LIB", "GRN"]
+    },
+    "Ynys Mon": {
+      "parties": ["LIB", "GRN"]
+    },
+    "Vale of Glamorgan": {
+      "parties": ["LIB", "PLC"]
+    },
+    "Brighton Pavilion": {
+      "parties": ["LIB"]
+    },
+    "Bristol West": {
+      "parties": ["LIB"]
+    },
+    "Bury St Edmunds": {
+      "parties": ["LIB"]
+    },
+    "Cannock Chase": {
+      "parties": ["LIB"]
+    },
+    "Dulwich and West Norwood": {
+      "parties": ["LIB"]
+    },
+    "Exeter": {
+      "parties": ["LIB"]
+    },
+    "Forest of Dean": {
+      "parties": ["LIB"]
+    },
+    "Isle of Wight": {
+      "parties": ["LIB"]
+    },
+    "Stroud": {
+      "parties": ["LIB"]
+    },
+    "Brecon and Radnorshire": {
+      "parties": ["GRN", "PLC"]
+    },
+    "Cardiff Central": {
+      "parties": ["GRN", "PLC"]
+    },
+    "Montgomeryshire": {
+      "parties": ["GRN", "PLC"]
+    },
+    "Bath": {
+      "parties": ["GRN"]
+    },
+    "Norfolk North": {
+      "parties": ["GRN"]
+    },
+    "Oxford West and Abingdon": {
+      "parties": ["GRN"]
+    },
+    "Cambridgeshire South": {
+      "parties": ["GRN"]
+    },
+    "Totnes": {
+      "parties": ["GRN"]
+    },
+    "Twickenham": {
+      "parties": ["GRN"]
+    },
+    "Westmorland and Lonsdale": {
+      "parties": ["GRN"]
+    },
+    "Bermondsey and Old Southwark": {
+      "parties": ["GRN"]
+    },
+    "Buckingham": {
+      "parties": ["GRN"]
+    },
+    "Cheadle": {
+      "parties": ["GRN"]
+    },
+    "Chelmsford": {
+      "parties": ["GRN"]
+    },
+    "Chelsea and Fulham": {
+      "parties": ["GRN"]
+    },
+    "Cheltenham": {
+      "parties": ["GRN"]
+    },
+    "Chippenham": {
+      "parties": ["GRN"]
+    },
+    "Esher and Walton": {
+      "parties": ["GRN"]
+    },
+    "Finchley and Golders Green": {
+      "parties": ["GRN"]
+    },
+    "Guildford": {
+      "parties": ["GRN"]
+    },
+    "Harrogate": {
+      "parties": ["GRN"]
+    },
+    "Hazel Grove": {
+      "parties": ["GRN"]
+    },
+    "Hitchin and Harpenden": {
+      "parties": ["GRN"]
+    },
+    "North Cornwall": {
+      "parties": ["GRN"]
+    },
+    "Penistone and Stocksbridge": {
+      "parties": ["GRN"]
+    },
+    "Portsmouth South": {
+      "parties": ["GRN"]
+    },
+    "Richmond Park": {
+      "parties": ["GRN"]
+    },
+    "Romsey and Southampton North": {
+      "parties": ["GRN"]
+    },
+    "Rushcliffe": {
+      "parties": ["GRN"]
+    },
+    "Cambridgeshire South East": {
+      "parties": ["GRN"]
+    },
+    "Southport": {
+      "parties": ["GRN"]
+    },
+    "Surrey South West": {
+      "parties": ["GRN"]
+    },
+    "Taunton Deane": {
+      "parties": ["GRN"]
+    },
+    "Thornbury and Yate": {
+      "parties": ["GRN"]
+    },
+    "Tunbridge Wells": {
+      "parties": ["GRN"]
+    },
+    "Wantage": {
+      "parties": ["GRN"]
+    },
+    "Warrington South": {
+      "parties": ["GRN"]
+    },
+    "Watford": {
+      "parties": ["GRN"]
+    },
+    "Wells": {
+      "parties": ["GRN"]
+    },
+    "Wimbledon": {
+      "parties": ["GRN"]
+    },
+    "Winchester": {
+      "parties": ["GRN"]
+    },
+    "Witney": {
+      "parties": ["GRN"]
+    },
+    "York Outer": {
+      "parties": ["GRN"]
+    }
+  }
+}

@@ -77,14 +77,21 @@ class Parser {
       }
 
       const results = {};
+      const breakdown = {
+        turnout: turnout,
+        electorate,
+        votes: {}
+      };
+
       for (i = 5, j = header.length; i < j; i++) {
         const party = mapping[header[i].trim()];
         if (party === undefined) {
           console.log(header[i]);
         }
+        
         const result = parseInt(info[i]);
-
         results[party] = result / turnout;
+        breakdown.votes[party] = result;
       }
 
       this.constituencies.push({
@@ -92,7 +99,8 @@ class Parser {
         mp: info[1],
         region,
         country: info[3],
-        results
+        results,
+        breakdown
       });
     });
 

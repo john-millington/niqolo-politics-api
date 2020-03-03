@@ -2,7 +2,8 @@ const express = require('express');
 const compression = require('compression');
 const parser = require('body-parser');
 
-const config = require('./data/config/config-all.json');
+const config = require('./data/out.json');
+const polling = require('./data/polls/polling.json');
 const MFactory = require('./services/MFactory');
 
 const App = new express();
@@ -29,7 +30,9 @@ App.post('/api/elections', (request, responder) => {
     ...config,
     forecast: {
       ...config.forecast,
-      ...request.body
+      ...request.body,
+      SNP: request.body.SNP * 10,
+      PLC: request.body.PLC ? request.body.PLC * 10 : 0.12
     }
   });
 
@@ -42,6 +45,11 @@ App.post('/api/elections', (request, responder) => {
 
     responder.status(200).end();
   });
+});
+
+App.get('/api/polls', (request, responder) => {
+  responder.json(polling);
+  responder.status(200).end();
 });
 
 App.listen(2000);

@@ -23,7 +23,7 @@ class MConstituency {
       let true_multilpier = 0;
       const passes = [];
 
-      Object.keys(constituency).sort().forEach(year => {
+      Object.keys(constituency).sort().splice(0, Object.keys(constituency).length - 1).forEach(year => {
         if (!national || !national[year]) {
           return;
         }
@@ -38,8 +38,9 @@ class MConstituency {
         passes.push((result / heading));
       });
 
-      const trend_multiplier = (1 / passes.length);
+      const trend_multiplier = (1 / (passes.length * 10));
       for (let i = 0; i < passes.length; i++) {
+        // multiplier += Math.log(i) * passes[i];
         multiplier += (passes[i] * (trend_multiplier * (i + 1)));
         true_multilpier += passes[i];
       }
@@ -53,8 +54,8 @@ class MConstituency {
     this.calculation = {};
     
     let constituency_total = 0;
-    Object.keys(this.projection_multipliers).forEach(party => {
-      let multiplier_result = this.data.forecast[party] * this.projection_multipliers[party];
+    Object.keys(this.true_multipliers).forEach(party => {
+      let multiplier_result = this.data.forecast[party] * (this.true_multipliers[party] * (1 / Math.log10((this.data.forecast[party] * 100))));
       if (isNaN(multiplier_result)) {
         multiplier_result = 0;
       }
